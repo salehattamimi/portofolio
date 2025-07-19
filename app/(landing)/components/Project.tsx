@@ -48,7 +48,7 @@ export const listProyek: Project[] = [{
     gambar: Simpeg,
     nama: "Employee Information System",
     desk: "SIMPEG (simpeg.madiunkota.go.id) is an integrated HR information system for the Madiun City Government. It manages civil servant data, including employee records, promotions, positions, and performance evaluations — all in one digital platform to improve accuracy and efficiency.",
-    tools: ["Vite", "ReactJS", "Bootstrap", "AOS"],
+    tools: ["Laravel 8", "Javascript", "PostgreSql", "Jwt"],
     dad: "500",
     link: "https://simpeg.madiunkota.go.id",
 },
