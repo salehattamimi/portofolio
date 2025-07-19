@@ -14,6 +14,7 @@ type Project = {
     nama: string,
     tools: string[],
     dad: string;
+    link?: string;
 }
 export const listProyek: Project[] = [{
     id: 1,
@@ -22,6 +23,7 @@ export const listProyek: Project[] = [{
     desk: "e-Rusun is a digital platform designed to streamline the management and administration of public housing (rusun) through a transparent, efficient, and integrated system. It serves both residents and administrators, improving service delivery and data accessibility.",
     tools: ["Laravel 8", "Javascript", "JWT", "PostgreSql", "Nginx"],
     dad: "200",
+    link: "https://erusun.dprkpp.web.id",
 },
 {
     id: 2,
@@ -30,6 +32,7 @@ export const listProyek: Project[] = [{
     desk: "SIBENGKI stands for “Bengkel Usaha Kita”, which translates to `Our Workshop Business`. It is a web-based application designed to support the training and operational management of automotive workshops. The platform focuses on enhancing the skills and performance of workshop employees through structured digital modules.",
     tools: ["Laravel 10", "Javascript", "PostgreSql", "Ajax", "Nginx"],
     dad: "300",
+    link: "https://sibengki.id",
 },
 {
     id: 3,
@@ -38,6 +41,7 @@ export const listProyek: Project[] = [{
     desk: "Silat Pesut is Integrated Monitoring Platform for Local Government a web-based e-controlling system developed by the Penajam Paser Utara government to monitor and report government programs in real time. It helps streamline reporting, improve transparency, and support data-driven decision-making across departments for .",
     tools: ["Laravel 10", "Bootstrap", "Javascript", "Leaflet", "Nginx", "PostgreSql"],
     dad: "400",
+    link: "https://silatpesut.penajamkab.go.id/",
 },
 {
     id: 4,
@@ -46,6 +50,7 @@ export const listProyek: Project[] = [{
     desk: "SIMPEG (simpeg.madiunkota.go.id) is an integrated HR information system for the Madiun City Government. It manages civil servant data, including employee records, promotions, positions, and performance evaluations — all in one digital platform to improve accuracy and efficiency.",
     tools: ["Vite", "ReactJS", "Bootstrap", "AOS"],
     dad: "500",
+    link: "https://simpeg.madiunkota.go.id",
 },
 {
     id: 5,
@@ -54,6 +59,7 @@ export const listProyek: Project[] = [{
     desk: "Hyarta Ecovillage is a premium residential and commercial development located near Adisucipto Airport, Yogyakarta, promoted under hyarta.com. It offers eco-friendly townhouses and shop-houses (ruko), blending modern architecture with Javanese cultural elements and abundant green space",
     tools: ["Laravel 8", "Javascript", "Bootsrap", "PostgreSql", "Nginx"],
     dad: "600",
+    link: "https://hyarta.com"
 },
 {
     id: 6,
@@ -62,6 +68,7 @@ export const listProyek: Project[] = [{
     desk: "Jatim Berdasi is a digital platform developed by East Java’s Regional Research & Innovation Agency (BRIDA) to manage and evaluate regional innovations efficiently. It replaces manual processes with a structured, transparent system for submitting, verifying, and scoring innovation proposals—primarily for the annual Inotek Awards. The system has significantly enhanced the province’s innovation index by ensuring real-time tracking, standardized evaluation across 20 criteria, and streamlined administration.",
     tools: ["Laravel 8", "Javascript", "JWT", "PostgreSql", "Nginx"],
     dad: "700",
+    link: "https://jatimberdasi.brida.jatimprov.go.id/"
 },
 ];
 
@@ -103,7 +110,7 @@ const Project = () => {
                         {/* Tombol tetap di bawah */}
                         <div className="mt-6 text-center">
                             <a
-                                href="#"
+                                href={project.link || "#"} target="_blank" rel="noopener noreferrer"
                                 className="bg-red-600 p-3 rounded-lg block border border-zinc-800 hover:bg-red-700"
                             >
                                 Visit Website

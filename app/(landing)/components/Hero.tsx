@@ -1,7 +1,7 @@
 import Image from "next/image"
 import "remixicon/fonts/remixicon.css"
 const HeroImage = "/assets/saleh.jpeg"
-
+const PortoPdf = "/Saleh Abdullah Attamimi S.Kom.pdf"
 // const HeroImage = '/assets/hero-img.webp'
 
 const Hero = () => {
@@ -21,7 +21,7 @@ const Hero = () => {
 
                 </p>
                 <div className="flex items-center sm:gap-4 gap-2">
-                    <a href="#" className="bg-red-900 p-4 rounded-2xl hover:bg-red-600">Download CV <i className="ri-download-line ri-lg"></i></a>
+                    <a href={PortoPdf} target="_blank" download className="bg-red-900 p-4 rounded-2xl hover:bg-red-600">Download CV <i className="ri-download-line ri-lg"></i></a>
                     <a href="#project" className="bg-blue-900 p-4 rounded-2xl hover:bg-blue-800">Lihat Proyek<i className="ri-arrow-down-line ri-lg"></i></a>
                 </div>
             </div>
