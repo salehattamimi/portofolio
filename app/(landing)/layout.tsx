@@ -17,7 +17,7 @@ export default function LandingLayout({ children }: { children: React.ReactNode 
         };
     }, []);
     return (
-        <div className="bg-zinc-900 text-white min-h-screen">
+        <div className={`bg-zinc-900 text-white min-h-screen ${poppins.className}`}>
             <main>{children}</main>
         </div>
     );

@@ -10,7 +10,7 @@ const Footer = () => {
     return (
         <footer className="bg-zinc-900 text-zinc-300 py-10 mt-20" id="contact">
             <div className="container mx-auto px-6 text-center">
-                <h2 className="text-2xl font-semibold mb-4">Let's Connect</h2>
+                <h2 className="text-2xl font-semibold mb-4">Let&apos;s Connect</h2>
                 <p className="mb-6 text-sm text-zinc-400">Feel free to reach out on any of these platforms</p>
                 <div className="flex justify-center gap-6 mb-6">
                     <a

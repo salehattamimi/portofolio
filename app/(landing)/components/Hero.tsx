@@ -9,14 +9,21 @@ const Hero = () => {
         <div className="hero grid md:grid-cols-2 items-center pt-10 xl:gap-0 gap-6 grid-cols-1 ">
             <div className="animate__animated animate__fadeInUp">
                 <div className="flex items-center gap-3 mb-6 bg-zinc-800 w-fit p-4 rounded-2xl">
-                    <img src={HeroImage} alt="Hero Image" className="w-10 rounded-md" />
-                    <q>🧠The best developers aren’t those who know everything, but those who never stop exploring
+                    <Image
+                        src={HeroImage}
+                        alt="Hero Image"
+                        width={40} // ganti sesuai kebutuhan
+                        height={40}
+                        className="rounded-md"
+                    />
+
+                    <q>🧠The best developers are&apos;t those who know everything, but those who never stop exploring
                     </q>
                 </div>
-                <h1 className="text-5xl/tight font-bold mb-6">Hi, I'm Saleh Attamimi</h1>
-                <p className="text-base/loose mb-6 opacity-50">    I'm a Fullstack Developer with 6+ years of experience and over 15 completed web projects under my belt.
-                    I specialize in Laravel and modern frontend stacks, and I’m passionate about building clean, scalable, and user-focused applications.
-                    I'm always learning and exploring new technologies to keep improving my craft.
+                <h1 className="text-5xl/tight font-bold mb-6">Hi, I&apos;m Saleh Attamimi</h1>
+                <p className="text-base/loose mb-6 opacity-50">    I&apos;m a Fullstack Developer with 6+ years of experience and over 15 completed web projects under my belt.
+                    I specialize in Laravel and modern frontend stacks, and I&apos;m passionate about building clean, scalable, and user-focused applications.
+                    I&apos;m always learning and exploring new technologies to keep improving my craft.
 
 
                 </p>
@@ -26,7 +33,13 @@ const Hero = () => {
                 </div>
             </div>
             {/* <div className="bg-gradient-to-b from-purple-500 to-blue-600 p-4 rounded-bl-[60px]"> */}
-            <img src={HeroImage} alt="Hero Image" className="w-[450px] h-[500px] rounded-2xl md:ml-auto animate__animated animate__fadeInUp animate__delay-1s" />
+            <Image
+                src="/assets/saleh.jpeg"
+                alt="Hero Image"
+                width={450}
+                height={500}
+                className="w-[450px] h-[500px] rounded-2xl md:ml-auto animate__animated animate__fadeInUp animate__delay-1s"
+            />
             {/* </div> */}
 
         </div>
