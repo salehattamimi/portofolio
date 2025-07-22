@@ -21,7 +21,7 @@ const Navbar = () => {
     return (
         <div className="navbar py-7 flex items-center justify-between">
             <div className="logo">
-                <h1 className="text-3xl font-bold bg-white text-black md:bg-transparent md:text-white">Saleh Attamimi </h1>
+                <h1 className="text-3xl font-bold md:bg-transparent text-white">Saleh Attamimi </h1>
             </div>
             <ul className={`${active ? "top-0 opacity-100" : "-top-10 opacity-0"} menu flex items-center gap-6 sm:gap-10 md:static fixed left-1/2 bg-red-900/80 backdrop-blur-md p-4 rounded-br-2xl rounded-bl-2xl -translate-x-1/2 md:-translate-x-0 md:opacity-100 md:bg-transparent transition-all md:transition-none z-50 `}>
                 <li><a href="#home" className="text-base sm:text-lg font-medium hover:transition-all  hover:rounded-2xl hover:text-red-600">Home</a></li>
