@@ -40,7 +40,15 @@ export const { handlers, auth, signIn, signOut } = NextAuth({
                     return null;
                 }
 
-                return user;
+                return {
+                    id: user.id,
+                    name: user.name ?? null,
+                    email: user.email ?? null,
+                    username: user.username ?? null,
+                    image: user.image ?? null,
+                    role: user.role_id, // custom role simpan di token nanti
+                };
+
             }
 
         })
