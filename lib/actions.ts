@@ -1,5 +1,4 @@
 "use server";
-import { RegisterSchema } from "@/lib/zod";
 import { hashSync } from "bcrypt-ts";
 import { prisma } from "@/lib/prisma";
 import { redirect } from "next/navigation";

@@ -50,7 +50,7 @@ export default function Login() {
                         className="w-full space-y-4">
                         <FormField
                             name="username"
-                            render={({ field }) => (
+                            render={() => (
                                 <FormItem>
                                     <FormLabel>Username</FormLabel>
                                     <FormControl>
@@ -67,7 +67,7 @@ export default function Login() {
                         />
                         <FormField
                             name="password"
-                            render={({ field }) => (
+                            render={() => (
                                 <FormItem>
                                     <FormLabel>Password</FormLabel>
                                     <FormControl>

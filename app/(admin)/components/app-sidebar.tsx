@@ -23,8 +23,9 @@ import {
 import { DropdownMenu, DropdownMenuContent, DropdownMenuItem, DropdownMenuTrigger } from "@/components/ui/dropdown-menu"
 import { signOut } from "@/auth"
 import Link from "next/link"
+import { Session } from "next-auth"
 
-export function AppSidebar({ session, ...props }: { session: any }) {
+export function AppSidebar({ session, ...props }: { session: Session | null }) {
     return (
         <Sidebar {...props}>
             <SidebarHeader>
