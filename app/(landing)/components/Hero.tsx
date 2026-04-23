@@ -20,7 +20,7 @@ const Hero = () => {
                     <q>🧠The best developers are&apos;t those who know everything, but those who never stop exploring
                     </q>
                 </div>
-                <h1 className="text-5xl/tight font-bold mb-6">Hi, I&apos;m Saleh Attamimi</h1>
+                <h1 className="text-5xl/tight font-bold mb-6">Hi, I&apos;m Saleh Abdullah Attamimi</h1>
                 <p className="text-base/loose mb-6 opacity-50">    I&apos;m a Fullstack Developer with 6+ years of experience and over 15 completed web projects under my belt.
                     I specialize in Laravel and modern frontend stacks, and I&apos;m passionate about building clean, scalable, and user-focused applications.
                     I&apos;m always learning and exploring new technologies to keep improving my craft.
